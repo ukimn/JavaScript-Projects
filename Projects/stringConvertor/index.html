@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form{
+            padding: 20px;
+            border: 2px solid;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        input[type="text"]{
+            padding: 0.2rem;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        input[type="radio"]{
+            transform: scale(2);
+            margin: 0 10px 30px 20px;
+        }
+
+        label{
+            font-size: 2em;
+        }
+
+        button{
+            padding: 10px;
+            font-size: 3em;
+            font-weight: 900;
+            background-color: blue;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            transition: all ease 0.7s;
+        }
+
+        button:hover{
+            transform: scale(1.1);
+        }
+
+        p{
+            font-size: 2rem;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <input type="text" id="inputForm"><br>
+        <input type="radio" name="caseOption" id="radioOne">
+        <label for="radioOne">Convert => All CAPITAL</label><br>
+        <input type="radio" name="caseOption" id="radioTwo">
+        <label for="radioTwo">Convert => all small</label><br>
+    
+        <button type="button" onclick="handleSubmit()" id="submit">Submit</button>
+
+        <p id="p"></p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

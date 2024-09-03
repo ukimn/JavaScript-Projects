@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Swap</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: background-color 1s ease;
+        }
+
+        @keyframes colorChange {
+            0% { background-color: red; }
+            33% { background-color: blue; }
+            66% { background-color: black; }
+            100% { background-color: red; }
+        }
+
+        .animate {
+            animation: colorChange 3s infinite;
+        }
+
+        button {
+            margin: 10px;
+        }
+
+        #red{
+            padding: 10px;
+            font-size: 2rem;
+            font-weight: 800;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: red;
+        }
+
+        #black{
+            padding: 10px;
+            font-size: 2rem;
+            font-weight: 800;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: black;
+        }
+
+        #blue{
+            padding: 10px;
+            font-size: 2rem;
+            font-weight: 800;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: blue;
+        }
+
+        #swap{
+            padding: 10px;
+            font-size: 2rem;
+            font-weight: 800;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeToRed()" id="red">Red</button>
+    <button onclick="changeToBlack()" id="black">Black</button>
+    <button onclick="changeToBlue()" id="blue">Blue</button>
+    <button onclick="toggleAnimation()" id="swap">Swap Between Colors</button>
+    <script src="script.js"></script>
+</body>
+</html>

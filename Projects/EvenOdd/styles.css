@@ -1,0 +1,92 @@
+/* Base styles for mobile devices (default) */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+form {
+    border: 3px solid;
+    background-color: aqua;
+    width: 90%; /* Adjusted for smaller screens */
+    max-width: 350px; /* Ensures it doesn't grow too large on bigger screens */
+    margin: auto; /* Centers the form */
+    padding: 10px; /* Adds padding for better spacing */
+    border-radius: 5px;
+}
+
+h1 {
+    color: white;
+}
+
+input {
+    padding: 10px; /* Increased padding for easier touch interaction */
+    font-size: 18px; /* Adjusted font size */
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    width: 50%; /* Makes input field fill the form width */
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 40%; /* Makes button fill the form width */
+}
+
+button:hover {
+    background-color: rgb(1, 1, 179);
+}
+
+button:active {
+    background-color: red;
+}
+
+p {
+    font-size: 20px; /* Adjusted font size for better readability on small screens */
+}
+
+#radiobutton{
+    margin: 0;
+}
+
+/* Tablets and larger devices */
+@media (min-width: 768px) {
+    input, button {
+        font-size: 20px; /* Larger font size for bigger screens */
+    }
+
+    form {
+        width: 60%; /* Adjusted width for larger screens */
+    }
+
+    p {
+        font-size: 24px; /* Slightly larger font size */
+    }
+}
+
+/* Laptops and desktops */
+@media (min-width: 1024px) {
+    input, button {
+        font-size: 22px; /* Larger font size for desktops */
+    }
+
+    form {
+        width: 50%; /* More space on larger screens */
+    }
+
+    p {
+        font-size: 30px; /* Larger font size for better readability */
+    }
+}
+
+/* Extra large screens, such as large desktop monitors */
+@media (min-width: 1440px) {
+    form {
+        width: 40%; /* Reduces form width on very large screens */
+    }
+}

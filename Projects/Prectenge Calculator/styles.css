@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+form{
+    margin: auto;
+    border: 3px solid;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+h1{
+    color: rgb(0, 98, 255);
+}
+
+input{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+button{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(3, 3, 171);
+}
+
+button:active{
+    background-color: red;
+}
+
+label[for="radioButtons"]{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+input[type="radio"]{
+    margin: 10px 0 0 0;
+}
+
+#result{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#textBox{
+    margin: 0 80px 0 0;
+}

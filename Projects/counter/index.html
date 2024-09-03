@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #counter{
+            padding: 10px;
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            transition: all ease 0.7s;
+        }
+
+        #counter:hover{
+            transform: translateY(-10px);
+        }
+
+        #result{
+            font-size: 3rem;
+        }
+
+        #counterr{
+            padding: 10px;
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            transition: all ease 0.7s;
+        }
+
+        #counterr:hover{
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="counter()" id="counter">Click Me!</button><br>
+    <button id="counterr">Reset</button>
+    <p id="result">0</p>
+    <script src="script.js"></script>
+</body>
+</html>

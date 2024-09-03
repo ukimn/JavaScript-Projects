@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+button{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(0, 0, 146);
+}
+
+button:active{
+    background-color: red;
+}
+
+#result{
+    font-size: 30px;
+    font-weight: bolder;
+}

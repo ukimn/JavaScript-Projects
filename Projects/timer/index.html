@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: monospace;
+        }
+
+        #set-timer{
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="number"]{
+            margin-right: 20px;
+            width: 4rem;
+            padding: 8px;
+            font-size: 2rem;
+            border-radius: 5px;
+        }
+
+        #timer{
+            text-align: center;
+            font-size: 6.5rem;
+            border: 2px solid;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        button[type="button"]{
+            padding: 10px;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-left: 10px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        button[type="button"]:active{
+            transform: scale(0.8);
+        }
+    </style>
+</head>
+<body>
+    <div id="set-timer">
+        <input type="number" id="hours" placeholder="hrs">
+        <input type="number" id="minutes" placeholder="min">
+        <input type="number" id="seconds" placeholder="sec">
+    </div>
+    <p id="timer">00:00:00</p>
+    <button type="button" id="btn">submit</button>
+    <script src="script.js"></script>
+</body>
+</html>
